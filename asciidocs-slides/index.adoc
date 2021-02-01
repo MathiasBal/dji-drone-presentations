@@ -17,13 +17,14 @@ ifndef::backend[:backend: html5]
 
 == Benötigte Apps
 
-* MobileSDK
+* Mobile-SDK
 * UXSDK 
 * WSBridge
 
 === Mobile-SDK
 * Verbindung zur Drohne und zum Controller:
 
+[.font2]
 .MobileSDK connection diagram (credits to https://developer.dji.com/mobile-sdk/documentation/introduction/mobile_sdk_introduction.html[DJI])
 image::mobilesdk_connection_diagram.png[width=50%]
 
