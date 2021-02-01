@@ -8,12 +8,12 @@ ifndef::backend[:backend: html5]
 :title-slide-background-image: background-drone.jpg
 
 :icons: font
-:customcss: style.css
+:stylesheet: style.css
 
 == Equipment
 * DJI Mavic Mini
 * mindestens ein Android Gerät oder Emulator
-** WSBridge benötigt echtes Gerät (siehe Slide)
+** WSBridge benötigt echtes Gerät
 
 == Benötigte Apps
 
