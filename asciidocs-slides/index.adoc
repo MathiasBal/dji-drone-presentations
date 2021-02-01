@@ -21,7 +21,7 @@ ifndef::backend[:backend: html5]
 * UXSDK 
 * WSBridge
 
-=== MobileSDK
+=== Mobile-SDK
 * Verbindung zur Drohne und zum Controller:
 
 .MobileSDK connection diagram (credits to https://developer.dji.com/mobile-sdk/documentation/introduction/mobile_sdk_introduction.html[DJI])
@@ -29,7 +29,6 @@ image::mobilesdk_connection_diagram.png[width=50%]
 
 ==== Funktionalitäten
 
-[.step]
 * Kalibrierung
 * Akkumanagement
 * Signalübertragung und Kommunikation 
@@ -42,7 +41,6 @@ image::mobilesdk_connection_diagram.png[width=50%]
 
 ==== Funktionalitäten
 
-[.step]
 * Live Kameraansicht
 * Live Status
 ** Batterie
