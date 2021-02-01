@@ -1,0 +1,91 @@
+= DJI Drone Prototype
+Binder Paul, Bal Mathias, Herzog Nathalie
+1.0, 2021-01-26
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::videosdir[:videosdir: videos]
+ifndef::backend[:backend: html5]
+:title-slide-background-image: background-drone.jpg
+
+:icons: font
+:customcss: style.css
+
+== Equipment
+* DJI Mavic Mini
+* mindestens ein Android Gerät oder Emulator
+** WSBridge benötigt echtes Gerät (siehe Slide)
+
+== Benötigte Apps
+
+* MobileSDK
+* UXSDK 
+* WSBridge
+
+=== MobileSDK
+* Verbindung zur Drohne und zum Controller:
+
+image::mobilesdk_connection_diagram.png[width=50%]
+
+
+==== Funktionalitäten
+
+[.step]
+* Kalibrierung
+* Akkumanagement
+* Signalübertragung und Kommunikation 
+
+=== UXSDK 
+
+[.font2]
+* visuelle SDK bestehend aus UI Elementen
+** Design ähnlich zur DJI Go App (DJI Go unterstützt Mavic Mini nicht)
+
+==== Funktionalitäten
+
+[.step]
+* Live Kameraansicht
+* Live Status
+** Batterie
+** Signalstärke
+** etc.
+* Take Off, Land, Go Home
+
+=== WSBridge
+* läuft auf Android Gerät verbunden zum Kontroller der Drohne
+* verbindet sich über Netzwerk mit Gerät, auf welchem SDK App läuft
+** Brücke zwischen Kontroller und SDK App
+*** SDK App via USB mit PC und via WIFI mit Kontroller verbunden
+* https://github.com/dji-sdk/Android-Bridge-App
+
+[%notitle]
+=== !
+image:wsbridge_connected.jpeg[width=50%]
+
+=== SDK verbunden zur Bridge
+image:mobilesdk_wsbridge_on.jpeg[width=50%]
+
+== Gimbal Rotate
+
+[.stretch]
+video::fUDDT5iUuaA[youtube, options=autoplay, width=100%, height=200%]
+
+=== Ganzes UX
+image:uxsdk_full.jpeg[width=100%]
+
+=== Preflight Panel
+image:uxsdk_widget1.jpeg[width=100%]
+
+=== Camera Panel
+image:uxsdk_widget2.jpeg[width=100%]
+
+=== MobileSDK Controller 
+video::GqR8zEic5yg[youtube, options=autoplay]
+
+== In Action
+
+=== Mit MobileSDK
+video::KYc8tb18wbY[youtube, options=autoplay]
+
+=== Mit DJIFly
+video::LsVWhBkUgF4[youtube, options=autoplay]
+video::-iQ2T-s_8G8[youtube, options=autoplay]
