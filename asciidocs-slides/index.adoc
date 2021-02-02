@@ -35,7 +35,7 @@ ifndef::backend[:backend: html5]
 :stylesheet: style.css
 
 == Equipment
-image::structure.png[width=45%]
+image::systemstructure.svg[width=45%]
 
 == Benötigte Apps
 
