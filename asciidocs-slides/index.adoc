@@ -80,7 +80,7 @@ image:uxsdk_widget2.jpeg[width=100%]
 === MobileSDK Controller 
 video::GqR8zEic5yg[youtube, options=autoplay]
 
-== In Action
+== In Action 
 
 === Mit MobileSDK
 video::KYc8tb18wbY[youtube, options=autoplay]
