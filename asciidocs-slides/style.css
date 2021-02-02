@@ -11,14 +11,14 @@ section.font3 {
 }
 
 body {
-    background: #87ceeb;
-    background: -moz-radial-gradient(center, circle cover, #fff 0%, #87ceeb 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(100%, #87ceeb));
-    background: -webkit-radial-gradient(center, circle cover, #fff 0%, #87ceeb 100%);
-    background: -o-radial-gradient(center, circle cover, #fff 0%, #87ceeb 100%);
-    background: -ms-radial-gradient(center, circle cover, #fff 0%, #87ceeb 100%);
-    background: radial-gradient(center, circle cover, #fff 0%, #87ceeb 100%);
-    background-color: #87ceeb;
+    background: #888888;
+    background: -moz-radial-gradient(center, circle cover, #fff 0%, #888888 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(100%, #888888));
+    background: -webkit-radial-gradient(center, circle cover, #fff 0%, #888888 100%);
+    background: -o-radial-gradient(center, circle cover, #fff 0%, #888888 100%);
+    background: -ms-radial-gradient(center, circle cover, #fff 0%, #888888 100%);
+    background: radial-gradient(center, circle cover, #fff 0%, #888888 100%);
+    background-color: #888888;
 }
 
 
