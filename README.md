@@ -7,3 +7,6 @@
 * Bal Karan
 * Binder Paul
 * Herzog Nathalie 
+
+## Link
+https://mathiasbal.github.io/dji-drone-presentations/#/[link]
