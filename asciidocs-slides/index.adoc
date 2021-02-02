@@ -1,30 +1,6 @@
 = DJI Drone Prototype
 Binder Paul, Bal Mathias, Herzog Nathalie
 1.0, 2021-01-26
-
-:revealjs_customtheme: style.css
-:revealjs_autoSlide: 5000
-:revealjs_history: true
-:revealjs_fragmentInURL: true
-:revealjs_viewDistance: 5
-:revealjs_width: 1408
-:revealjs_height: 792
-:revealjs_controls: true
-:revealjs_controlsLayout: edges
-:revealjs_controlsTutorial: true
-:revealjs_slideNumber: c/t
-:revealjs_showSlideNumber: speaker
-:revealjs_autoPlayMedia: true
-:revealjs_defaultTiming: 42
-:revealjs_parallaxBackgroundImage: background-newdrone.jpg
-:revealjs_parallaxBackgroundSize: 4936px 2092px
-:customcss: style.css
-:imagesdir: images
-:source-highlighter: highlightjs
-:highlightjs-theme: css/atom-one-light.css
-:iconfont-remote!:
-:iconfont-name: fonts/fontawesome/css/all
-
 ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::videosdir[:videosdir: videos]
@@ -33,6 +9,16 @@ ifndef::backend[:backend: html5]
 
 :icons: font
 :stylesheet: style.css
+
+== In Action
+
+=== Mit MobileSDK
+video::KYc8tb18wbY[youtube, options=autoplay]
+
+=== Mit DJIFly
+video::LsVWhBkUgF4[youtube, options=autoplay]
+video::qjEcMWqmdAA[youtube, options=autoplay]
+
 
 == Equipment
 image::systemstructure.svg[width=45%]
@@ -44,11 +30,10 @@ image::structure.svg[width=45%]
 === Mobile-SDK
 * Verbindung zur Drohne und zum Controller:
 
-[.font2]
 .MobileSDK connection diagram https://developer.dji.com/mobile-sdk/documentation/introduction/mobile_sdk_introduction.html[DJI]
 image::mobilesdk_connection_diagram.png[width=50%]
 
-==== Funktionalitäten
+=== Funktionalitäten
 
 * Kalibrierung
 * Akkumanagement
@@ -60,7 +45,7 @@ image::mobilesdk_connection_diagram.png[width=50%]
 * visuelle SDK bestehend aus UI Elementen
 ** Design ähnlich zur DJI Go App (DJI Go unterstützt Mavic Mini nicht)
 
-==== Funktionalitäten
+=== Funktionalitäten
 
 * Live Kameraansicht
 * Live Status
@@ -78,15 +63,13 @@ image::mobilesdk_connection_diagram.png[width=50%]
 
 [%notitle]
 === !
-image:wsbridge_connected.jpeg[width=50%]
+image:wsbridge_connected.jpeg[width=25%]
 
 === SDK verbunden zur Bridge
-image:mobilesdk_wsbridge_on.jpeg[width=50%]
+image:mobilesdk_wsbridge_on.jpeg[width=25%]
 
 == Gimbal Rotate
-
-[.stretch]
-video::fUDDT5iUuaA[youtube, options=autoplay, width=100%, height=200%]
+video::fUDDT5iUuaA[youtube, options=autoplay, height=100%]
 
 === Ganzes UX
 image:uxsdk_full.jpeg[width=100%]
@@ -99,12 +82,3 @@ image:uxsdk_widget2.jpeg[width=100%]
 
 === MobileSDK Controller 
 video::GqR8zEic5yg[youtube, options=autoplay]
-
-== In Action 
-
-=== Mit MobileSDK
-video::KYc8tb18wbY[youtube, options=autoplay]
-
-=== Mit DJIFly
-video::LsVWhBkUgF4[youtube, options=autoplay]
-video::qjEcMWqmdAA[youtube, options=autoplay]
