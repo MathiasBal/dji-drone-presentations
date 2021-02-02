@@ -27,7 +27,7 @@ echo "build completed ..."
 
 # Source: https://github.com/bentolor/java9to13/blob/master/docs/render
 
-echo http://localhost:8000/demo-slides.html
+echo http://localhost:8000/#
 echo "Starting Webserver on :8000"
 python3 -m http.server --directory $BUILD_DIR >/dev/null 2>&1 &
 ps aux | grep http.server
