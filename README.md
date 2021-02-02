@@ -9,4 +9,4 @@
 * Herzog Nathalie 
 
 ## Link
-https://mathiasbal.github.io/dji-drone-presentations/#/[link]
+https://mathiasbal.github.io/dji-drone-presentations/#/
