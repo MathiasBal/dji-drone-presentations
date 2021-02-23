@@ -1,0 +1,139 @@
+= DJI Drone Prototype
+Binder Paul, Bal Mathias, Herzog Nathalie
+1.0, 2021-01-26
+ifndef::sourcedir[:sourcedir: ../src/main/java]
+ifndef::imagesdir[:imagesdir: images]
+ifndef::videosdir[:videosdir: videos]
+ifndef::backend[:backend: html5]
+:title-slide-background-image: background-drone.jpg
+
+:revealjs_customtheme: css/sky.css
+:revealjs_autoSlide: 5000
+:revealjs_history: true
+:revealjs_fragmentInURL: true
+:revealjs_viewDistance: 5
+:revealjs_width: 1408
+:revealjs_height: 792
+:revealjs_controls: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_defaultTiming: 42
+:customcss: css/style.css
+:imagesdir: images
+:source-highlighter: highlightjs
+:highlightjs-theme: css/atom-one-light.css
+
+== In Action
+
+=== Mit MobileSDK
+video::KYc8tb18wbY[youtube, options=autoplay]
+
+=== MobileSDK Controller
+video::GqR8zEic5yg[youtube, options=autoplay]
+
+=== Mit DJI Fly
+video::LsVWhBkUgF4[youtube, options=autoplay]
+
+=== DJI Fly Test
+video::qjEcMWqmdAA[youtube, options=autoplay]
+
+== Equipment
+image::systemstructure.svg[width=45%]
+
+== Benötigte Apps
+
+image::structure.svg[width=45%]
+
+=== Mobile-SDK
+* Verbindung zur Drohne und zum Controller:
+
+.MobileSDK connection diagram https://developer.dji.com/mobile-sdk/documentation/introduction/mobile_sdk_introduction.html[DJI]
+image::mobilesdk_connection_diagram.png[width=50%]
+
+=== Funktionalitäten
+
+* Kalibrierung
+* Akkumanagement
+* Signalübertragung und Kommunikation 
+
+=== UXSDK 
+
+[.font2]
+* visuelle SDK bestehend aus UI Elementen
+** Design ähnlich zur DJI Go App (DJI Go unterstützt Mavic Mini nicht)
+
+=== Funktionalitäten
+
+* Live Kameraansicht
+* Live Status
+** Batterie
+** Signalstärke
+** etc.
+* Take Off, Land, Go Home
+
+=== WSBridge
+* läuft auf Android Gerät verbunden zum Controller der Drohne
+* verbindet sich über Netzwerk mit Gerät, auf welchem SDK App läuft
+** Brücke zwischen Controller und SDK App
+*** SDK App via USB mit PC und via WIFI mit Controller verbunden
+* https://github.com/dji-sdk/Android-Bridge-App
+
+[%notitle]
+=== !
+image:wsbridge_connected.jpeg[width=25%]
+
+=== SDK verbunden zur Bridge
+image:mobilesdk_wsbridge_on.jpeg[width=25%]
+
+== Gimbal Rotate
+video::fUDDT5iUuaA[youtube, options=autoplay, height=100%]
+
+=== Ganzes UX
+image:uxsdk_full.jpeg[width=100%]
+
+=== Preflight Panel
+image:uxsdk_widget1.jpeg[width=100%]
+
+=== Camera Panel
+image:uxsdk_widget2.jpeg[width=100%]
+
+== Vorgehensweise
+
+* [x] Kennenlernen des Gesamtsystems / APIs / Arbeitsumgebung
+** Ergebnis: Prototyp -> vorhandenes Demoprogramm wurde ergänzt
+** Kurze Filme über die Funktionen wurden erstellt
+** Präsentation über Gesamtsystem
+
+* [ ] Autonomes Fliegen implementieren
+** Auf OpenStreetMap Punkte markieren
+** Drohne fliegt diese Punkte nacheinander an
+
+* [ ] Vorarbeiten für Bilderkennung
+** AI Learningalgorithmen zur Bilderkennung
+//Nutzung von Keras / Tensorflow oder Pytorch
+** Erarbeiten von möglichen Szenarien (Business cases) zur Anwendung der Bilderkennung
+** Prototyp, welcher Objekte erkennt und kategorisiert
+
+=== Autonomes Fliegen (Binder Paul)
+* Punkte setzen in OpenStreetsMap
+* Drohne eigenständig die Punkte abfliegen lassen
+* Videofeed der Gimbal (Kamera) auf das Handy übertragen
+
+=== Bilderkennung (Herzog Nathalie)
+* AI Algorithmus schreiben zur Erkennung von Gegenständen
+* Algorithmus durch Bilder trainieren um Objekte zu erkennen
+
+=== Bilderkennung (Bal Mathias)
+* Erkannte Objekte zuordnen
+* Die Daten verarbeiten und an das Handy weiterleiten
+
+
+
+
+
+
+
+
