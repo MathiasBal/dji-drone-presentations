@@ -7,18 +7,38 @@ ifndef::videosdir[:videosdir: videos]
 ifndef::backend[:backend: html5]
 :title-slide-background-image: background-drone.jpg
 
-:icons: font
-:stylesheet: style.css
+:revealjs_customtheme: css/sky.css
+:revealjs_autoSlide: 5000
+:revealjs_history: true
+:revealjs_fragmentInURL: true
+:revealjs_viewDistance: 5
+:revealjs_width: 1408
+:revealjs_height: 792
+:revealjs_controls: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_defaultTiming: 42
+:customcss: css/style.css
+:imagesdir: images
+:source-highlighter: highlightjs
+:highlightjs-theme: css/atom-one-light.css
 
 == In Action
 
 === Mit MobileSDK
 video::KYc8tb18wbY[youtube, options=autoplay]
 
-=== Mit DJIFly
-video::LsVWhBkUgF4[youtube, options=autoplay]
-video::qjEcMWqmdAA[youtube, options=autoplay]
+=== MobileSDK Controller
+video::GqR8zEic5yg[youtube, options=autoplay]
 
+=== Mit DJI Fly
+video::LsVWhBkUgF4[youtube, options=autoplay]
+
+=== DJI Fly Test
+video::qjEcMWqmdAA[youtube, options=autoplay]
 
 == Equipment
 image::systemstructure.svg[width=45%]
@@ -80,5 +100,40 @@ image:uxsdk_widget1.jpeg[width=100%]
 === Camera Panel
 image:uxsdk_widget2.jpeg[width=100%]
 
-=== MobileSDK Controller 
-video::GqR8zEic5yg[youtube, options=autoplay]
+== Vorgehensweise
+
+* [x] Kennenlernen des Gesamtsystems / APIs / Arbeitsumgebung
+** Ergebnis: Prototyp -> vorhandenes Demoprogramm wurde ergänzt
+** Kurze Filme über die Funktionen wurden erstellt
+** Präsentation über Gesamtsystem
+
+* [ ] Autonomes Fliegen implementieren
+** Auf OpenStreetMap Punkte markieren
+** Drohne fliegt diese Punkte nacheinander an
+
+* [ ] Vorarbeiten für Bilderkennung
+** AI Learningalgorithmen zur Bilderkennung
+//Nutzung von Keras / Tensorflow oder Pytorch
+** Erarbeiten von möglichen Szenarien (Business cases) zur Anwendung der Bilderkennung
+** Prototyp, welcher Objekte erkennt und kategorisiert
+
+=== Autonomes Fliegen (Binder Paul)
+* Punkte setzen in OpenStreetsMap
+* Drohne eigenständig die Punkte abfliegen lassen
+* Videofeed der Gimbal (Kamera) auf das Handy übertragen
+
+=== Bilderkennung (Herzog Nathalie)
+* AI Algorithmus schreiben zur Erkennung von Gegenständen
+* Algorithmus durch Bilder trainieren um Objekte zu erkennen
+
+=== Bilderkennung (Bal Mathias)
+* Erkannte Objekte zuordnen
+* Die Daten verarbeiten und an das Handy weiterleiten
+
+
+
+
+
+
+
+
