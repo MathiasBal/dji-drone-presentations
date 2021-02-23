@@ -1,9 +1,6 @@
 # dji-drone-presentations
 
-## Project Leader
-* Bal Karan
+This is the repository for our presentation of our current status of the project.
 
-## Project Members
-* Bal Karan
-* Binder Paul
-* Herzog Nathalie 
+## Link
+https://mathiasbal.github.io/dji-drone-presentations/#/
